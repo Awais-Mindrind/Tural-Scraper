@@ -1,0 +1,10 @@
+selenium
+bs4 
+python-dotenv
+pyairtable
+fastapi
+langchain
+langchain-google-genai
+uvicorn
+crawl4ai
+selenium-wire==5.1.0
