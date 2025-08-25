@@ -1,11 +1,12 @@
-import time, random, re
+import time, random, re, os
 from seleniumbase import Driver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 from schemas import Profile
 from utils import parse_count 
 from airtable import save_profile_to_airtable, get_existing_usernames
+from dotenv import load_dotenv
+load_dotenv()
 
 # CONFIGURATION
 BASE_HASHTAG = "games"
@@ -15,9 +16,10 @@ SCROLL_PAUSE = (2, 4)
 
 def get_driver():
     # 🔹 Add Proxy Here
-    proxy = "c7a43522e2000b561ab6__cr.us:b16012b413a3bddf@gw.dataimpulse.com:823"
-    
-    driver = Driver(browser="chrome", proxy=proxy, uc=True, headless=True, no_sandbox=True, window_size="1920,1080", disable_gpu=True)
+    proxy = os.getenv("PROXY")  # Example: "http://username:password@proxyserver:port"
+    driver = Driver(browser="chrome", proxy=proxy, uc=True, no_sandbox=True, window_size="1920,1080", disable_gpu=True,
+                    # headless=True,
+                    incognito=True)
     driver.implicitly_wait(10)
     return driver
 
