@@ -8,3 +8,4 @@ langchain-google-genai
 uvicorn
 crawl4ai
 selenium-wire==5.1.0
+seleniumbase>=4.38.2

@@ -1,5 +1,5 @@
 import time, random, re
-from selenium import webdriver
+from seleniumbase import Driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
@@ -8,21 +8,16 @@ from utils import parse_count
 from airtable import save_profile_to_airtable, get_existing_usernames
 
 # CONFIGURATION
-BASE_HASHTAG = "Sports"
+BASE_HASHTAG = "games"
 NUM_PROFILES = 500
 SCROLL_PAUSE = (2, 4)
 
 
 def get_driver():
-    options = Options()
-    # options.add_argument("--headless")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920,1080")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--disable-infobars")
-    options.add_argument("--start-maximized")
-    driver = webdriver.Chrome(options=options)
+    # 🔹 Add Proxy Here
+    proxy = "c7a43522e2000b561ab6__cr.us:b16012b413a3bddf@gw.dataimpulse.com:823"
+    
+    driver = Driver(browser="chrome", proxy=proxy, uc=True, headless=True, no_sandbox=True, window_size="1920,1080", disable_gpu=True)
     driver.implicitly_wait(10)
     return driver
 
