@@ -1,3 +1,494 @@
-2025-08-25 15:05:19,731 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2025-08-25 15:05:19,732 - INFO - Added job "run_cron_job" to job store "default"
-2025-08-25 15:05:19,732 - INFO - Scheduler started
+2025-08-27 13:05:03,032 - MainThread - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-27 13:05:03,033 - MainThread - INFO - Added job "Daily TikTok Scraping" to job store "default"
+2025-08-27 13:05:03,033 - MainThread - INFO - Scheduler started
+2025-08-27 13:05:03,033 - MainThread - INFO - 📅 Scheduler started - cron job will run every 24 hours
+2025-08-27 13:05:03,033 - MainThread - INFO - Added job "Task Cleanup" to job store "default"
+2025-08-27 13:05:03,033 - MainThread - INFO - 🧹 Cleanup job scheduled - runs every 6 hours
+2025-08-27 13:05:03,034 - MainThread - INFO - Added job "Health Monitoring" to job store "default"
+2025-08-27 13:05:03,034 - MainThread - INFO - 💓 Health monitor scheduled - runs every 30 minutes
+2025-08-27 13:05:03,060 - MainThread - INFO - 🚀 Starting TikTok Scraper Triggers System...
+2025-08-27 13:05:03,060 - MainThread - INFO - 📁 Using modular architecture:
+2025-08-27 13:05:03,060 - MainThread - INFO -    - api.py: FastAPI endpoints and LLM integration
+2025-08-27 13:05:03,060 - MainThread - INFO -    - task_manager.py: Task management and threading
+2025-08-27 13:05:03,060 - MainThread - INFO -    - triggers.py: Cron jobs and scheduling
+2025-08-27 13:05:28,229 - MainThread - INFO - Processing LLM query: Find TikTok profiles about travel with more than 10k followers
+2025-08-27 13:05:30,253 - MainThread - INFO - LLM parsed query to filters: hashtag='travel' country=None min_followers=10000 min_likes=None limit=100
+2025-08-27 13:05:30,262 - MainThread - INFO - API request: Starting scraper for hashtag: test
+2025-08-27 13:05:30,262 - MainThread - INFO - Task task_1756281930262_140704387956608 added to queue with priority 1
+2025-08-27 13:05:30,262 - MainThread - INFO - Task task_1756281930262_140704387956608 added to manager
+2025-08-27 13:05:30,262 - MainThread - INFO - Task task_1756281930262_140704387956608 queued successfully
+2025-08-27 13:05:31,093 - Thread-1 (process_scraper_queue) - INFO - Active thread added: task_1756281930262_140704387956608 (Scraper-task_1756281930262_140704387956608)
+2025-08-27 13:05:31,094 - Scraper-task_1756281930262_140704387956608 - INFO - [Scraper-task_1756281930262_140704387956608] Starting scraper task task_1756281930262_140704387956608 for hashtag: test
+2025-08-27 13:05:31,094 - Thread-1 (process_scraper_queue) - INFO - Started thread for task task_1756281930262_140704387956608, active threads: 1
+2025-08-27 13:05:31,094 - Scraper-task_1756281930262_140704387956608 - INFO - Task task_1756281930262_140704387956608 status updated to: running
+2025-08-27 13:05:31,095 - Scraper-task_1756281930262_140704387956608 - INFO - [Scraper-task_1756281930262_140704387956608] Executing scraper for hashtag: test
+2025-08-27 13:05:31,095 - Scraper-task_1756281930262_140704387956608 - INFO - 🚀 Starting TikTok profile scraping for hashtag: test
+2025-08-27 13:05:31,096 - Scraper-task_1756281930262_140704387956608 - INFO - Target profiles: 10
+2025-08-27 13:05:33,606 - MainThread - INFO - Task task_1756281933606_140704387956608 added to queue with priority 1
+2025-08-27 13:05:33,606 - MainThread - INFO - Task task_1756281933606_140704387956608 added to manager
+2025-08-27 13:05:33,606 - MainThread - INFO - LLM-initiated scraper task task_1756281933606_140704387956608 queued for hashtag: foodblogger
+2025-08-27 13:05:33,615 - Scraper-task_1756281930262_140704387956608 - INFO - Found 147 existing usernames in database
+2025-08-27 13:05:33,615 - Scraper-task_1756281930262_140704387956608 - INFO - 🚗 Initializing web driver...
+2025-08-27 13:05:34,104 - Thread-1 (process_scraper_queue) - INFO - Active thread added: task_1756281933606_140704387956608 (Scraper-task_1756281933606_140704387956608)
+2025-08-27 13:05:34,104 - Scraper-task_1756281933606_140704387956608 - INFO - [Scraper-task_1756281933606_140704387956608] Starting scraper task task_1756281933606_140704387956608 for hashtag: foodblogger
+2025-08-27 13:05:34,104 - Thread-1 (process_scraper_queue) - INFO - Started thread for task task_1756281933606_140704387956608, active threads: 2
+2025-08-27 13:05:34,105 - Scraper-task_1756281933606_140704387956608 - INFO - Task task_1756281933606_140704387956608 status updated to: running
+2025-08-27 13:05:34,105 - Scraper-task_1756281933606_140704387956608 - INFO - [Scraper-task_1756281933606_140704387956608] Executing scraper for hashtag: foodblogger
+2025-08-27 13:05:34,105 - Scraper-task_1756281933606_140704387956608 - INFO - 🚀 Starting TikTok profile scraping for hashtag: foodblogger
+2025-08-27 13:05:34,105 - Scraper-task_1756281933606_140704387956608 - INFO - Target profiles: 50
+2025-08-27 13:05:34,793 - Scraper-task_1756281933606_140704387956608 - INFO - Found 147 existing usernames in database
+2025-08-27 13:05:34,793 - Scraper-task_1756281933606_140704387956608 - INFO - 🚗 Initializing web driver...
+2025-08-27 13:05:37,141 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Web driver initialized successfully
+2025-08-27 13:05:37,142 - Scraper-task_1756281930262_140704387956608 - INFO - 🌍 Generating country hashtag variations for: test
+2025-08-27 13:05:37,142 - Scraper-task_1756281930262_140704387956608 - INFO - Generated 80 hashtag variations
+2025-08-27 13:05:37,142 - Scraper-task_1756281930262_140704387956608 - INFO - 📥 Phase 1: Collecting profile URLs...
+2025-08-27 13:05:37,142 - Scraper-task_1756281930262_140704387956608 - INFO - 🎬 Collecting profiles for #testusa (Country: usa)
+2025-08-27 13:05:41,122 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Web driver initialized successfully
+2025-08-27 13:05:41,123 - Scraper-task_1756281933606_140704387956608 - INFO - 🌍 Generating country hashtag variations for: foodblogger
+2025-08-27 13:05:41,123 - Scraper-task_1756281933606_140704387956608 - INFO - Generated 80 hashtag variations
+2025-08-27 13:05:41,123 - Scraper-task_1756281933606_140704387956608 - INFO - 📥 Phase 1: Collecting profile URLs...
+2025-08-27 13:05:41,123 - Scraper-task_1756281933606_140704387956608 - INFO - 🎬 Collecting profiles for #foodbloggerusa (Country: usa)
+2025-08-27 13:06:11,703 - Scraper-task_1756281930262_140704387956608 - INFO - Navigated to hashtag page: https://www.tiktok.com/tag/testusa
+2025-08-27 13:06:17,263 - Scraper-task_1756281933606_140704387956608 - INFO - Navigated to hashtag page: https://www.tiktok.com/tag/foodbloggerusa
+2025-08-27 13:06:18,416 - Scraper-task_1756281930262_140704387956608 - INFO - Found 60 video cards for #testusa (scroll #1)
+2025-08-27 13:06:18,537 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Reached target of 10 profiles for #testusa
+2025-08-27 13:06:18,538 - Scraper-task_1756281930262_140704387956608 - INFO - Reached target profile count, stopping collection
+2025-08-27 13:06:18,538 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Phase 1 completed: 10 profiles collected
+2025-08-27 13:06:18,538 - Scraper-task_1756281930262_140704387956608 - INFO - 🔍 Phase 2: Scraping individual profiles...
+2025-08-27 13:06:18,538 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 1/10: https://www.tiktok.com/@info_nity360 (Country: usa)
+2025-08-27 13:06:22,551 - Scraper-task_1756281933606_140704387956608 - INFO - Found 58 video cards for #foodbloggerusa (scroll #1)
+2025-08-27 13:06:26,303 - Scraper-task_1756281933606_140704387956608 - INFO - Found 116 video cards for #foodbloggerusa (scroll #2)
+2025-08-27 13:06:26,820 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: info_nity360 (1/10)
+2025-08-27 13:06:27,115 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile info_nity360 to Airtable...
+2025-08-27 13:06:27,881 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile info_nity360 saved successfully
+2025-08-27 13:06:27,882 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 2/10: https://www.tiktok.com/@mahanlankarani (Country: usa)
+2025-08-27 13:06:29,358 - Scraper-task_1756281933606_140704387956608 - INFO - Found 116 video cards for #foodbloggerusa (scroll #3)
+2025-08-27 13:06:32,735 - Scraper-task_1756281933606_140704387956608 - INFO - Found 168 video cards for #foodbloggerusa (scroll #4)
+2025-08-27 13:06:32,859 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Reached target of 50 profiles for #foodbloggerusa
+2025-08-27 13:06:32,859 - Scraper-task_1756281933606_140704387956608 - INFO - Reached target profile count, stopping collection
+2025-08-27 13:06:32,860 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Phase 1 completed: 50 profiles collected
+2025-08-27 13:06:32,860 - Scraper-task_1756281933606_140704387956608 - INFO - 🔍 Phase 2: Scraping individual profiles...
+2025-08-27 13:06:32,860 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 1/50: https://www.tiktok.com/@taysfoodtour (Country: usa)
+2025-08-27 13:06:34,852 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: mahanlankarani (2/10)
+2025-08-27 13:06:34,940 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile mahanlankarani to Airtable...
+2025-08-27 13:06:35,434 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile mahanlankarani saved successfully
+2025-08-27 13:06:35,434 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 3/10: https://www.tiktok.com/@quizwhizcharlie (Country: usa)
+2025-08-27 13:06:46,915 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: quizwhizcharlie (3/10)
+2025-08-27 13:06:46,985 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile quizwhizcharlie to Airtable...
+2025-08-27 13:06:47,484 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile quizwhizcharlie saved successfully
+2025-08-27 13:06:47,484 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 4/10: https://www.tiktok.com/@us.citizen10 (Country: usa)
+2025-08-27 13:06:50,331 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: taysfoodtour (1/50)
+2025-08-27 13:06:50,484 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile taysfoodtour to Airtable...
+2025-08-27 13:06:50,999 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile taysfoodtour saved successfully
+2025-08-27 13:06:50,999 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 2/50: https://www.tiktok.com/@devourpower (Country: usa)
+2025-08-27 13:06:53,980 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: us.citizen10 (4/10)
+2025-08-27 13:06:55,086 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile us.citizen10 to Airtable...
+2025-08-27 13:06:55,529 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile us.citizen10 saved successfully
+2025-08-27 13:06:55,529 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 5/10: https://www.tiktok.com/@quizizi (Country: usa)
+2025-08-27 13:06:57,799 - Scraper-task_1756281933606_140704387956608 - INFO - ⏭️ Skipping devourpower - already in database
+2025-08-27 13:06:57,799 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 3/50: https://www.tiktok.com/@hicc319 (Country: usa)
+2025-08-27 13:07:01,416 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: quizizi (5/10)
+2025-08-27 13:07:01,574 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile quizizi to Airtable...
+2025-08-27 13:07:02,042 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile quizizi saved successfully
+2025-08-27 13:07:02,042 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 6/10: https://www.tiktok.com/@quizpopmania (Country: usa)
+2025-08-27 13:07:05,988 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: hicc319 (2/50)
+2025-08-27 13:07:06,063 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile hicc319 to Airtable...
+2025-08-27 13:07:06,507 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile hicc319 saved successfully
+2025-08-27 13:07:06,507 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 4/50: https://www.tiktok.com/@glichefmancati1 (Country: usa)
+2025-08-27 13:07:08,489 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: quizpopmania (6/10)
+2025-08-27 13:07:08,560 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile quizpopmania to Airtable...
+2025-08-27 13:07:09,027 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile quizpopmania saved successfully
+2025-08-27 13:07:09,028 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 7/10: https://www.tiktok.com/@realgrandpaquiz88 (Country: usa)
+2025-08-27 13:07:13,829 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: glichefmancati1 (3/50)
+2025-08-27 13:07:13,900 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile glichefmancati1 to Airtable...
+2025-08-27 13:07:14,349 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile glichefmancati1 saved successfully
+2025-08-27 13:07:14,349 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 5/50: https://www.tiktok.com/@thetastyfoods (Country: usa)
+2025-08-27 13:07:15,769 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: realgrandpaquiz88 (7/10)
+2025-08-27 13:07:15,847 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile realgrandpaquiz88 to Airtable...
+2025-08-27 13:07:16,321 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile realgrandpaquiz88 saved successfully
+2025-08-27 13:07:16,322 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 8/10: https://www.tiktok.com/@drbeerry (Country: usa)
+2025-08-27 13:07:20,105 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: thetastyfoods (4/50)
+2025-08-27 13:07:20,561 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile thetastyfoods to Airtable...
+2025-08-27 13:07:21,005 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile thetastyfoods saved successfully
+2025-08-27 13:07:21,005 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 6/50: https://www.tiktok.com/@nate_eatz (Country: usa)
+2025-08-27 13:07:22,675 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: drbeerry (8/10)
+2025-08-27 13:07:22,753 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile drbeerry to Airtable...
+2025-08-27 13:07:23,213 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile drbeerry saved successfully
+2025-08-27 13:07:23,214 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 9/10: https://www.tiktok.com/@ms.desolate (Country: usa)
+2025-08-27 13:07:26,393 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: nate_eatz (5/50)
+2025-08-27 13:07:26,576 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile nate_eatz to Airtable...
+2025-08-27 13:07:27,003 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile nate_eatz saved successfully
+2025-08-27 13:07:27,003 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 7/50: https://www.tiktok.com/@latryguy (Country: usa)
+2025-08-27 13:07:30,101 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: ms.desolate (9/10)
+2025-08-27 13:07:30,202 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile ms.desolate to Airtable...
+2025-08-27 13:07:30,641 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile ms.desolate saved successfully
+2025-08-27 13:07:30,641 - Scraper-task_1756281930262_140704387956608 - INFO - Scraping profile 10/10: https://www.tiktok.com/@_lehabesha (Country: usa)
+2025-08-27 13:07:32,629 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: latryguy (6/50)
+2025-08-27 13:07:32,738 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile latryguy to Airtable...
+2025-08-27 13:07:33,257 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile latryguy saved successfully
+2025-08-27 13:07:33,257 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 8/50: https://www.tiktok.com/@street_food368 (Country: usa)
+2025-08-27 13:07:36,969 - Scraper-task_1756281930262_140704387956608 - INFO - Processing profile: _lehabesha (10/10)
+2025-08-27 13:07:37,058 - Scraper-task_1756281930262_140704387956608 - INFO - 💾 Saving profile _lehabesha to Airtable...
+2025-08-27 13:07:37,506 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Profile _lehabesha saved successfully
+2025-08-27 13:07:37,506 - Scraper-task_1756281930262_140704387956608 - INFO - 🎉 Scraping completed!
+2025-08-27 13:07:37,506 - Scraper-task_1756281930262_140704387956608 - INFO - 📊 Summary:
+2025-08-27 13:07:37,506 - Scraper-task_1756281930262_140704387956608 - INFO -    - Total profiles found: 10
+2025-08-27 13:07:37,507 - Scraper-task_1756281930262_140704387956608 - INFO -    - Successfully scraped: 10
+2025-08-27 13:07:37,507 - Scraper-task_1756281930262_140704387956608 - INFO -    - Skipped (already exists): 0
+2025-08-27 13:07:37,507 - Scraper-task_1756281930262_140704387956608 - INFO -    - Errors: 0
+2025-08-27 13:07:37,507 - Scraper-task_1756281930262_140704387956608 - INFO -    - Duration: 126.41 seconds
+2025-08-27 13:07:37,507 - Scraper-task_1756281930262_140704387956608 - INFO -    - Average time per profile: 12.64 seconds
+2025-08-27 13:07:37,507 - Scraper-task_1756281930262_140704387956608 - INFO - 🧹 Cleaning up web driver...
+2025-08-27 13:07:38,169 - Scraper-task_1756281930262_140704387956608 - INFO - ✅ Web driver cleaned up
+2025-08-27 13:07:38,170 - Scraper-task_1756281930262_140704387956608 - INFO - Task task_1756281930262_140704387956608 status updated to: completed
+2025-08-27 13:07:38,170 - Scraper-task_1756281930262_140704387956608 - INFO - [Scraper-task_1756281930262_140704387956608] Successfully completed task task_1756281930262_140704387956608 for hashtag: test
+2025-08-27 13:07:38,170 - Scraper-task_1756281930262_140704387956608 - INFO - Active thread removed: task_1756281930262_140704387956608
+2025-08-27 13:07:38,170 - Scraper-task_1756281930262_140704387956608 - INFO - [Scraper-task_1756281930262_140704387956608] Thread cleanup completed for task task_1756281930262_140704387956608
+2025-08-27 13:07:39,099 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: street_food368 (7/50)
+2025-08-27 13:07:39,943 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile street_food368 to Airtable...
+2025-08-27 13:07:40,442 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile street_food368 saved successfully
+2025-08-27 13:07:40,442 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 9/50: https://www.tiktok.com/@tallzz_ (Country: usa)
+2025-08-27 13:07:48,417 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: tallzz_ (8/50)
+2025-08-27 13:07:48,639 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile tallzz_ to Airtable...
+2025-08-27 13:07:49,090 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile tallzz_ saved successfully
+2025-08-27 13:07:49,090 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 10/50: https://www.tiktok.com/@karissaeats (Country: usa)
+2025-08-27 13:07:55,593 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: karissaeats (9/50)
+2025-08-27 13:07:55,658 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile karissaeats to Airtable...
+2025-08-27 13:07:56,150 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile karissaeats saved successfully
+2025-08-27 13:07:56,151 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 11/50: https://www.tiktok.com/@theretrogrill (Country: usa)
+2025-08-27 13:08:03,175 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: theretrogrill (10/50)
+2025-08-27 13:08:03,242 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile theretrogrill to Airtable...
+2025-08-27 13:08:03,710 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile theretrogrill saved successfully
+2025-08-27 13:08:03,710 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 12/50: https://www.tiktok.com/@renzoeats (Country: usa)
+2025-08-27 13:08:11,757 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: renzoeats (11/50)
+2025-08-27 13:08:11,826 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile renzoeats to Airtable...
+2025-08-27 13:08:12,301 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile renzoeats saved successfully
+2025-08-27 13:08:12,301 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 13/50: https://www.tiktok.com/@hmmarket1 (Country: usa)
+2025-08-27 13:08:19,645 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: hmmarket1 (12/50)
+2025-08-27 13:08:19,711 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile hmmarket1 to Airtable...
+2025-08-27 13:08:20,213 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile hmmarket1 saved successfully
+2025-08-27 13:08:20,213 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 14/50: https://www.tiktok.com/@lbequick (Country: usa)
+2025-08-27 13:08:25,631 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: lbequick (13/50)
+2025-08-27 13:08:26,054 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile lbequick to Airtable...
+2025-08-27 13:08:26,446 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile lbequick saved successfully
+2025-08-27 13:08:26,446 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 15/50: https://www.tiktok.com/@reusparx (Country: usa)
+2025-08-27 13:08:33,677 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: reusparx (14/50)
+2025-08-27 13:08:33,745 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile reusparx to Airtable...
+2025-08-27 13:08:34,222 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile reusparx saved successfully
+2025-08-27 13:08:34,222 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 16/50: https://www.tiktok.com/@emmielolo602 (Country: usa)
+2025-08-27 13:08:40,532 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: emmielolo602 (15/50)
+2025-08-27 13:08:40,605 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile emmielolo602 to Airtable...
+2025-08-27 13:08:41,076 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile emmielolo602 saved successfully
+2025-08-27 13:08:41,076 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 17/50: https://www.tiktok.com/@mr.taster (Country: usa)
+2025-08-27 13:08:48,365 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: mr.taster (16/50)
+2025-08-27 13:08:48,429 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile mr.taster to Airtable...
+2025-08-27 13:08:48,875 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile mr.taster saved successfully
+2025-08-27 13:08:48,875 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 18/50: https://www.tiktok.com/@katinaeatskilosofficial (Country: usa)
+2025-08-27 13:08:55,324 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: katinaeatskilosofficial (17/50)
+2025-08-27 13:08:55,901 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile katinaeatskilosofficial to Airtable...
+2025-08-27 13:08:56,366 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile katinaeatskilosofficial saved successfully
+2025-08-27 13:08:56,366 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 19/50: https://www.tiktok.com/@therealfoodstalker (Country: usa)
+2025-08-27 13:09:03,434 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: therealfoodstalker (18/50)
+2025-08-27 13:09:03,510 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile therealfoodstalker to Airtable...
+2025-08-27 13:09:03,997 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile therealfoodstalker saved successfully
+2025-08-27 13:09:03,997 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 20/50: https://www.tiktok.com/@ieatalltheveganthings (Country: usa)
+2025-08-27 13:09:10,957 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: ieatalltheveganthings (19/50)
+2025-08-27 13:09:11,035 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile ieatalltheveganthings to Airtable...
+2025-08-27 13:09:11,510 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile ieatalltheveganthings saved successfully
+2025-08-27 13:09:11,510 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 21/50: https://www.tiktok.com/@ron.avenue (Country: usa)
+2025-08-27 13:09:19,495 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: ron.avenue (20/50)
+2025-08-27 13:09:19,569 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile ron.avenue to Airtable...
+2025-08-27 13:09:19,997 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile ron.avenue saved successfully
+2025-08-27 13:09:19,997 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 22/50: https://www.tiktok.com/@hangryblogger (Country: usa)
+2025-08-27 13:09:26,755 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: hangryblogger (21/50)
+2025-08-27 13:09:26,836 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile hangryblogger to Airtable...
+2025-08-27 13:09:27,293 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile hangryblogger saved successfully
+2025-08-27 13:09:27,293 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 23/50: https://www.tiktok.com/@street_food39 (Country: usa)
+2025-08-27 13:09:35,452 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: street_food39 (22/50)
+2025-08-27 13:09:35,663 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile street_food39 to Airtable...
+2025-08-27 13:09:36,143 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile street_food39 saved successfully
+2025-08-27 13:09:36,143 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 24/50: https://www.tiktok.com/@cookingwithjamarcus (Country: usa)
+2025-08-27 13:09:42,496 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: cookingwithjamarcus (23/50)
+2025-08-27 13:09:42,568 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile cookingwithjamarcus to Airtable...
+2025-08-27 13:09:43,052 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile cookingwithjamarcus saved successfully
+2025-08-27 13:09:43,052 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 25/50: https://www.tiktok.com/@lifeofcian (Country: usa)
+2025-08-27 13:09:49,202 - Scraper-task_1756281933606_140704387956608 - INFO - Processing profile: lifeofcian (24/50)
+2025-08-27 13:09:49,681 - Scraper-task_1756281933606_140704387956608 - INFO - 💾 Saving profile lifeofcian to Airtable...
+2025-08-27 13:09:50,175 - Scraper-task_1756281933606_140704387956608 - INFO - ✅ Profile lifeofcian saved successfully
+2025-08-27 13:09:50,176 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 26/50: https://www.tiktok.com/@donnydeppeats (Country: usa)
+2025-08-27 13:09:52,229 - Scraper-task_1756281933606_140704387956608 - ERROR - ❌ Error scraping profile https://www.tiktok.com/@donnydeppeats: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-27 13:09:52,229 - Scraper-task_1756281933606_140704387956608 - INFO - Scraping profile 27/50: https://www.tiktok.com/@dlameats (Country: usa)
+2025-08-27 13:09:52,338 - MainThread - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-08-27 13:09:52,339 - MainThread - INFO - Scheduler has been shut down
+2025-08-27 13:09:52,340 - MainThread - INFO - 📅 Scheduler stopped
+2025-08-27 13:09:52,340 - MainThread - INFO - ⏳ Waiting for 1 active tasks to complete...
+2025-08-27 14:07:18,981 - MainThread - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-27 14:07:18,982 - MainThread - INFO - Added job "Daily TikTok Scraping" to job store "default"
+2025-08-27 14:07:18,982 - MainThread - INFO - Scheduler started
+2025-08-27 14:07:18,982 - MainThread - INFO - 📅 Scheduler started - cron job will run every 24 hours
+2025-08-27 14:07:18,982 - MainThread - INFO - Added job "Task Cleanup" to job store "default"
+2025-08-27 14:07:18,983 - MainThread - INFO - 🧹 Cleanup job scheduled - runs every 6 hours
+2025-08-27 14:07:18,983 - MainThread - INFO - Added job "Health Monitoring" to job store "default"
+2025-08-27 14:07:18,983 - MainThread - INFO - 💓 Health monitor scheduled - runs every 30 minutes
+2025-08-27 14:07:19,007 - MainThread - INFO - 🚀 Starting TikTok Scraper Triggers System...
+2025-08-27 14:07:19,007 - MainThread - INFO - 📁 Using modular architecture:
+2025-08-27 14:07:19,007 - MainThread - INFO -    - api.py: FastAPI endpoints and LLM integration
+2025-08-27 14:07:19,007 - MainThread - INFO -    - task_manager.py: Task management and threading
+2025-08-27 14:07:19,007 - MainThread - INFO -    - triggers.py: Cron jobs and scheduling
+2025-08-27 14:13:19,432 - MainThread - INFO - API request: Starting scraper for hashtag: crypto
+2025-08-27 14:13:19,434 - MainThread - INFO - Task task_1756285999432_140704387956608 added to queue with priority 1
+2025-08-27 14:13:19,434 - MainThread - INFO - Task task_1756285999432_140704387956608 added to manager
+2025-08-27 14:13:19,434 - MainThread - INFO - Task task_1756285999432_140704387956608 queued successfully
+2025-08-27 14:13:20,026 - Thread-1 (process_scraper_queue) - INFO - Active thread added: task_1756285999432_140704387956608 (Scraper-task_1756285999432_140704387956608)
+2025-08-27 14:13:20,026 - Scraper-task_1756285999432_140704387956608 - INFO - [Scraper-task_1756285999432_140704387956608] Starting scraper task task_1756285999432_140704387956608 for hashtag: crypto
+2025-08-27 14:13:20,026 - Thread-1 (process_scraper_queue) - INFO - Started thread for task task_1756285999432_140704387956608, active threads: 1
+2025-08-27 14:13:20,026 - Scraper-task_1756285999432_140704387956608 - INFO - Task task_1756285999432_140704387956608 status updated to: running
+2025-08-27 14:13:20,027 - Scraper-task_1756285999432_140704387956608 - INFO - [Scraper-task_1756285999432_140704387956608] Executing scraper for hashtag: crypto
+2025-08-27 14:13:20,027 - Scraper-task_1756285999432_140704387956608 - INFO - 🚀 Starting TikTok profile scraping for hashtag: crypto
+2025-08-27 14:13:20,027 - Scraper-task_1756285999432_140704387956608 - INFO - Target profiles: 100
+2025-08-27 14:13:23,519 - Scraper-task_1756285999432_140704387956608 - INFO - Found 181 existing usernames in database
+2025-08-27 14:13:23,519 - Scraper-task_1756285999432_140704387956608 - INFO - 🚗 Initializing web driver...
+2025-08-27 14:13:26,725 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Web driver initialized successfully
+2025-08-27 14:13:26,727 - Scraper-task_1756285999432_140704387956608 - INFO - 🌍 Generating country hashtag variations for: crypto
+2025-08-27 14:13:26,727 - Scraper-task_1756285999432_140704387956608 - INFO - Generated 80 hashtag variations
+2025-08-27 14:13:26,727 - Scraper-task_1756285999432_140704387956608 - INFO - 📥 Phase 1: Collecting profile URLs...
+2025-08-27 14:13:26,727 - Scraper-task_1756285999432_140704387956608 - INFO - 🎬 Collecting profiles for #cryptousa (Country: usa)
+2025-08-27 14:14:04,186 - Scraper-task_1756285999432_140704387956608 - INFO - Navigated to hashtag page: https://www.tiktok.com/tag/cryptousa
+2025-08-27 14:14:09,353 - Scraper-task_1756285999432_140704387956608 - INFO - Found 58 video cards for #cryptousa (scroll #1)
+2025-08-27 14:14:12,996 - Scraper-task_1756285999432_140704387956608 - INFO - Found 58 video cards for #cryptousa (scroll #2)
+2025-08-27 14:14:15,188 - Scraper-task_1756285999432_140704387956608 - INFO - Found 114 video cards for #cryptousa (scroll #3)
+2025-08-27 14:14:18,620 - Scraper-task_1756285999432_140704387956608 - INFO - Found 162 video cards for #cryptousa (scroll #4)
+2025-08-27 14:14:21,759 - Scraper-task_1756285999432_140704387956608 - INFO - Found 220 video cards for #cryptousa (scroll #5)
+2025-08-27 14:14:24,486 - Scraper-task_1756285999432_140704387956608 - INFO - 🛑 No more scrolling possible for #cryptousa after 5 scrolls
+2025-08-27 14:14:24,487 - Scraper-task_1756285999432_140704387956608 - INFO - 📊 Profile collection completed for #cryptousa: 91 profiles found
+2025-08-27 14:14:24,487 - Scraper-task_1756285999432_140704387956608 - INFO - 🎬 Collecting profiles for #crypto_usa (Country: usa)
+2025-08-27 14:14:28,285 - Scraper-task_1756285999432_140704387956608 - INFO - Navigated to hashtag page: https://www.tiktok.com/tag/crypto_usa
+2025-08-27 14:14:34,320 - Scraper-task_1756285999432_140704387956608 - INFO - Found 58 video cards for #crypto_usa (scroll #1)
+2025-08-27 14:14:34,610 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Reached target of 100 profiles for #crypto_usa
+2025-08-27 14:14:34,610 - Scraper-task_1756285999432_140704387956608 - INFO - Reached target profile count, stopping collection
+2025-08-27 14:14:34,610 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Phase 1 completed: 100 profiles collected
+2025-08-27 14:14:34,610 - Scraper-task_1756285999432_140704387956608 - INFO - 🔍 Phase 2: Scraping individual profiles...
+2025-08-27 14:14:34,610 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 1/100: https://www.tiktok.com/@degenfino (Country: usa)
+2025-08-27 14:14:47,212 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: degenfino (1/100)
+2025-08-27 14:14:47,330 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile degenfino to Airtable...
+2025-08-27 14:14:48,007 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile degenfino saved successfully
+2025-08-27 14:14:48,007 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 2/100: https://www.tiktok.com/@eman_typist5 (Country: usa)
+2025-08-27 14:14:53,880 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: eman_typist5 (2/100)
+2025-08-27 14:14:54,084 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile eman_typist5 to Airtable...
+2025-08-27 14:14:54,662 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile eman_typist5 saved successfully
+2025-08-27 14:14:54,662 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 3/100: https://www.tiktok.com/@cryptodylnews372 (Country: usa)
+2025-08-27 14:15:01,686 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptodylnews372 (3/100)
+2025-08-27 14:15:02,119 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptodylnews372 to Airtable...
+2025-08-27 14:15:02,634 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptodylnews372 saved successfully
+2025-08-27 14:15:02,635 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 4/100: https://www.tiktok.com/@michellekirby308 (Country: usa)
+2025-08-27 14:15:09,999 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: michellekirby308 (4/100)
+2025-08-27 14:15:10,072 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile michellekirby308 to Airtable...
+2025-08-27 14:15:10,566 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile michellekirby308 saved successfully
+2025-08-27 14:15:10,567 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 5/100: https://www.tiktok.com/@moonshotsyn (Country: usa)
+2025-08-27 14:15:16,838 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: moonshotsyn (5/100)
+2025-08-27 14:15:16,915 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile moonshotsyn to Airtable...
+2025-08-27 14:15:17,387 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile moonshotsyn saved successfully
+2025-08-27 14:15:17,387 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 6/100: https://www.tiktok.com/@qfs_redemption_center000 (Country: usa)
+2025-08-27 14:15:23,151 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: qfs_redemption_center000 (6/100)
+2025-08-27 14:15:23,242 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile qfs_redemption_center000 to Airtable...
+2025-08-27 14:15:23,772 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile qfs_redemption_center000 saved successfully
+2025-08-27 14:15:23,773 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 7/100: https://www.tiktok.com/@zachrectorofficial7 (Country: usa)
+2025-08-27 14:15:31,347 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: zachrectorofficial7 (7/100)
+2025-08-27 14:15:31,429 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile zachrectorofficial7 to Airtable...
+2025-08-27 14:15:31,907 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile zachrectorofficial7 saved successfully
+2025-08-27 14:15:31,907 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 8/100: https://www.tiktok.com/@getcryptowise (Country: usa)
+2025-08-27 14:15:37,424 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: getcryptowise (8/100)
+2025-08-27 14:15:37,526 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile getcryptowise to Airtable...
+2025-08-27 14:15:37,980 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile getcryptowise saved successfully
+2025-08-27 14:15:37,980 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 9/100: https://www.tiktok.com/@comedycrypto (Country: usa)
+2025-08-27 14:15:45,190 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: comedycrypto (9/100)
+2025-08-27 14:15:45,392 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile comedycrypto to Airtable...
+2025-08-27 14:15:45,841 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile comedycrypto saved successfully
+2025-08-27 14:15:45,842 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 10/100: https://www.tiktok.com/@coachjv6600 (Country: usa)
+2025-08-27 14:15:52,426 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: coachjv6600 (10/100)
+2025-08-27 14:15:52,565 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile coachjv6600 to Airtable...
+2025-08-27 14:15:53,241 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile coachjv6600 saved successfully
+2025-08-27 14:15:53,242 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 11/100: https://www.tiktok.com/@dcvalue (Country: usa)
+2025-08-27 14:16:00,114 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: dcvalue (11/100)
+2025-08-27 14:16:00,582 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile dcvalue to Airtable...
+2025-08-27 14:16:01,087 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile dcvalue saved successfully
+2025-08-27 14:16:01,087 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 12/100: https://www.tiktok.com/@cryptowithleo (Country: usa)
+2025-08-27 14:16:07,235 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptowithleo (12/100)
+2025-08-27 14:16:07,329 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptowithleo to Airtable...
+2025-08-27 14:16:07,895 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptowithleo saved successfully
+2025-08-27 14:16:07,896 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 13/100: https://www.tiktok.com/@thenifftynvestor1 (Country: usa)
+2025-08-27 14:16:14,844 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: thenifftynvestor1 (13/100)
+2025-08-27 14:16:14,912 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile thenifftynvestor1 to Airtable...
+2025-08-27 14:16:15,361 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile thenifftynvestor1 saved successfully
+2025-08-27 14:16:15,361 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 14/100: https://www.tiktok.com/@odes_trade (Country: usa)
+2025-08-27 14:16:22,164 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: odes_trade (14/100)
+2025-08-27 14:16:22,278 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile odes_trade to Airtable...
+2025-08-27 14:16:22,791 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile odes_trade saved successfully
+2025-08-27 14:16:22,791 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 15/100: https://www.tiktok.com/@cryptowendyo (Country: usa)
+2025-08-27 14:16:30,202 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptowendyo (15/100)
+2025-08-27 14:16:30,269 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptowendyo to Airtable...
+2025-08-27 14:16:30,720 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptowendyo saved successfully
+2025-08-27 14:16:30,720 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 16/100: https://www.tiktok.com/@beyond_broke (Country: usa)
+2025-08-27 14:16:38,114 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: beyond_broke (16/100)
+2025-08-27 14:16:38,199 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile beyond_broke to Airtable...
+2025-08-27 14:16:38,699 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile beyond_broke saved successfully
+2025-08-27 14:16:38,699 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 17/100: https://www.tiktok.com/@cryptousa (Country: usa)
+2025-08-27 14:16:45,202 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptousa (17/100)
+2025-08-27 14:16:45,296 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptousa to Airtable...
+2025-08-27 14:16:45,745 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptousa saved successfully
+2025-08-27 14:16:45,745 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 18/100: https://www.tiktok.com/@getcyptowlse (Country: usa)
+2025-08-27 14:16:52,007 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: getcyptowlse (18/100)
+2025-08-27 14:16:52,088 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile getcyptowlse to Airtable...
+2025-08-27 14:16:52,547 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile getcyptowlse saved successfully
+2025-08-27 14:16:52,547 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 19/100: https://www.tiktok.com/@cryptomichaelhub (Country: usa)
+2025-08-27 14:16:58,323 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptomichaelhub (19/100)
+2025-08-27 14:16:58,402 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptomichaelhub to Airtable...
+2025-08-27 14:16:58,938 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptomichaelhub saved successfully
+2025-08-27 14:16:58,938 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 20/100: https://www.tiktok.com/@getcryptowisess0 (Country: usa)
+2025-08-27 14:17:04,702 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: getcryptowisess0 (20/100)
+2025-08-27 14:17:04,801 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile getcryptowisess0 to Airtable...
+2025-08-27 14:17:05,211 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile getcryptowisess0 saved successfully
+2025-08-27 14:17:05,211 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 21/100: https://www.tiktok.com/@country23707 (Country: usa)
+2025-08-27 14:17:11,119 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: country23707 (21/100)
+2025-08-27 14:17:11,287 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile country23707 to Airtable...
+2025-08-27 14:17:11,717 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile country23707 saved successfully
+2025-08-27 14:17:11,718 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 22/100: https://www.tiktok.com/@imcameronscrubs (Country: usa)
+2025-08-27 14:17:18,374 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: imcameronscrubs (22/100)
+2025-08-27 14:17:18,509 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile imcameronscrubs to Airtable...
+2025-08-27 14:17:18,970 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile imcameronscrubs saved successfully
+2025-08-27 14:17:18,970 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 23/100: https://www.tiktok.com/@cryptowithsmith (Country: usa)
+2025-08-27 14:17:25,349 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptowithsmith (23/100)
+2025-08-27 14:17:25,447 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptowithsmith to Airtable...
+2025-08-27 14:17:25,925 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptowithsmith saved successfully
+2025-08-27 14:17:25,925 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 24/100: https://www.tiktok.com/@coachty23 (Country: usa)
+2025-08-27 14:17:32,420 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: coachty23 (24/100)
+2025-08-27 14:17:32,498 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile coachty23 to Airtable...
+2025-08-27 14:17:32,951 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile coachty23 saved successfully
+2025-08-27 14:17:32,951 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 25/100: https://www.tiktok.com/@lorallangemeier (Country: usa)
+2025-08-27 14:17:39,193 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: lorallangemeier (25/100)
+2025-08-27 14:17:39,262 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile lorallangemeier to Airtable...
+2025-08-27 14:17:39,800 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile lorallangemeier saved successfully
+2025-08-27 14:17:39,801 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 26/100: https://www.tiktok.com/@crypto_and_real_estate (Country: usa)
+2025-08-27 14:17:43,621 - MainThread - INFO - API request: Starting scraper for hashtag: food
+2025-08-27 14:17:43,621 - MainThread - INFO - Task task_1756286263621_140704387956608 added to queue with priority 1
+2025-08-27 14:17:43,621 - MainThread - INFO - Task task_1756286263621_140704387956608 added to manager
+2025-08-27 14:17:43,621 - MainThread - INFO - Task task_1756286263621_140704387956608 queued successfully
+2025-08-27 14:17:43,871 - Thread-1 (process_scraper_queue) - INFO - Active thread added: task_1756286263621_140704387956608 (Scraper-task_1756286263621_140704387956608)
+2025-08-27 14:17:43,872 - Scraper-task_1756286263621_140704387956608 - INFO - [Scraper-task_1756286263621_140704387956608] Starting scraper task task_1756286263621_140704387956608 for hashtag: food
+2025-08-27 14:17:43,872 - Thread-1 (process_scraper_queue) - INFO - Started thread for task task_1756286263621_140704387956608, active threads: 2
+2025-08-27 14:17:43,872 - Scraper-task_1756286263621_140704387956608 - INFO - Task task_1756286263621_140704387956608 status updated to: running
+2025-08-27 14:17:43,873 - Scraper-task_1756286263621_140704387956608 - INFO - [Scraper-task_1756286263621_140704387956608] Executing scraper for hashtag: food
+2025-08-27 14:17:43,873 - Scraper-task_1756286263621_140704387956608 - INFO - 🚀 Starting TikTok profile scraping for hashtag: food
+2025-08-27 14:17:43,873 - Scraper-task_1756286263621_140704387956608 - INFO - Target profiles: 100
+2025-08-27 14:17:44,843 - Scraper-task_1756286263621_140704387956608 - INFO - Found 206 existing usernames in database
+2025-08-27 14:17:44,844 - Scraper-task_1756286263621_140704387956608 - INFO - 🚗 Initializing web driver...
+2025-08-27 14:17:46,024 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: crypto_and_real_estate (26/100)
+2025-08-27 14:17:46,148 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile crypto_and_real_estate to Airtable...
+2025-08-27 14:17:46,588 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile crypto_and_real_estate saved successfully
+2025-08-27 14:17:46,589 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 27/100: https://www.tiktok.com/@vic.laranja (Country: usa)
+2025-08-27 14:17:47,663 - Scraper-task_1756286263621_140704387956608 - INFO - ✅ Web driver initialized successfully
+2025-08-27 14:17:47,664 - Scraper-task_1756286263621_140704387956608 - INFO - 🌍 Generating country hashtag variations for: food
+2025-08-27 14:17:47,664 - Scraper-task_1756286263621_140704387956608 - INFO - Generated 80 hashtag variations
+2025-08-27 14:17:47,665 - Scraper-task_1756286263621_140704387956608 - INFO - 📥 Phase 1: Collecting profile URLs...
+2025-08-27 14:17:47,665 - Scraper-task_1756286263621_140704387956608 - INFO - 🎬 Collecting profiles for #foodusa (Country: usa)
+2025-08-27 14:17:53,721 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: vic.laranja (27/100)
+2025-08-27 14:17:53,847 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile vic.laranja to Airtable...
+2025-08-27 14:17:54,275 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile vic.laranja saved successfully
+2025-08-27 14:17:54,275 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 28/100: https://www.tiktok.com/@cryptoons (Country: usa)
+2025-08-27 14:18:00,705 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptoons (28/100)
+2025-08-27 14:18:00,783 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptoons to Airtable...
+2025-08-27 14:18:01,236 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptoons saved successfully
+2025-08-27 14:18:01,236 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 29/100: https://www.tiktok.com/@cryptowewo16 (Country: usa)
+2025-08-27 14:18:06,844 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptowewo16 (29/100)
+2025-08-27 14:18:06,927 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptowewo16 to Airtable...
+2025-08-27 14:18:07,339 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptowewo16 saved successfully
+2025-08-27 14:18:07,339 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 30/100: https://www.tiktok.com/@market.charts (Country: usa)
+2025-08-27 14:18:13,769 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: market.charts (30/100)
+2025-08-27 14:18:13,852 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile market.charts to Airtable...
+2025-08-27 14:18:14,305 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile market.charts saved successfully
+2025-08-27 14:18:14,306 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 31/100: https://www.tiktok.com/@tradewithjarvis1 (Country: usa)
+2025-08-27 14:18:18,023 - Scraper-task_1756286263621_140704387956608 - INFO - Navigated to hashtag page: https://www.tiktok.com/tag/foodusa
+2025-08-27 14:18:21,412 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: tradewithjarvis1 (31/100)
+2025-08-27 14:18:21,584 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile tradewithjarvis1 to Airtable...
+2025-08-27 14:18:22,145 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile tradewithjarvis1 saved successfully
+2025-08-27 14:18:22,145 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 32/100: https://www.tiktok.com/@cavemanfantasy (Country: usa)
+2025-08-27 14:18:29,456 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cavemanfantasy (32/100)
+2025-08-27 14:18:29,528 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cavemanfantasy to Airtable...
+2025-08-27 14:18:29,900 - Scraper-task_1756286263621_140704387956608 - INFO - Found 60 video cards for #foodusa (scroll #1)
+2025-08-27 14:18:30,092 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cavemanfantasy saved successfully
+2025-08-27 14:18:30,092 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 33/100: https://www.tiktok.com/@cryptotro (Country: usa)
+2025-08-27 14:18:33,716 - Scraper-task_1756286263621_140704387956608 - INFO - Found 120 video cards for #foodusa (scroll #2)
+2025-08-27 14:18:36,245 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cryptotro (33/100)
+2025-08-27 14:18:36,319 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cryptotro to Airtable...
+2025-08-27 14:18:36,476 - Scraper-task_1756286263621_140704387956608 - INFO - Found 120 video cards for #foodusa (scroll #3)
+2025-08-27 14:18:36,768 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cryptotro saved successfully
+2025-08-27 14:18:36,768 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 34/100: https://www.tiktok.com/@adariuscorbitt (Country: usa)
+2025-08-27 14:18:38,964 - Scraper-task_1756286263621_140704387956608 - INFO - Found 180 video cards for #foodusa (scroll #4)
+2025-08-27 14:18:43,067 - Scraper-task_1756286263621_140704387956608 - INFO - Found 238 video cards for #foodusa (scroll #5)
+2025-08-27 14:18:43,312 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: adariuscorbitt (34/100)
+2025-08-27 14:18:43,383 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile adariuscorbitt to Airtable...
+2025-08-27 14:18:43,815 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile adariuscorbitt saved successfully
+2025-08-27 14:18:43,815 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 35/100: https://www.tiktok.com/@explaining_in_apex_terms (Country: usa)
+2025-08-27 14:18:46,771 - Scraper-task_1756286263621_140704387956608 - INFO - 🛑 No more scrolling possible for #foodusa after 5 scrolls
+2025-08-27 14:18:46,772 - Scraper-task_1756286263621_140704387956608 - INFO - 📊 Profile collection completed for #foodusa: 94 profiles found
+2025-08-27 14:18:46,772 - Scraper-task_1756286263621_140704387956608 - INFO - 🎬 Collecting profiles for #food_usa (Country: usa)
+2025-08-27 14:18:49,500 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: explaining_in_apex_terms (35/100)
+2025-08-27 14:18:49,618 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile explaining_in_apex_terms to Airtable...
+2025-08-27 14:18:49,809 - Scraper-task_1756286263621_140704387956608 - INFO - Navigated to hashtag page: https://www.tiktok.com/tag/food_usa
+2025-08-27 14:18:50,055 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile explaining_in_apex_terms saved successfully
+2025-08-27 14:18:50,055 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 36/100: https://www.tiktok.com/@mrnasdog (Country: usa)
+2025-08-27 14:18:56,487 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: mrnasdog (36/100)
+2025-08-27 14:18:56,589 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile mrnasdog to Airtable...
+2025-08-27 14:18:56,593 - Scraper-task_1756286263621_140704387956608 - INFO - Found 60 video cards for #food_usa (scroll #1)
+2025-08-27 14:18:56,876 - Scraper-task_1756286263621_140704387956608 - INFO - ✅ Reached target of 100 profiles for #food_usa
+2025-08-27 14:18:56,883 - Scraper-task_1756286263621_140704387956608 - INFO - Reached target profile count, stopping collection
+2025-08-27 14:18:56,883 - Scraper-task_1756286263621_140704387956608 - INFO - ✅ Phase 1 completed: 100 profiles collected
+2025-08-27 14:18:56,883 - Scraper-task_1756286263621_140704387956608 - INFO - 🔍 Phase 2: Scraping individual profiles...
+2025-08-27 14:18:56,884 - Scraper-task_1756286263621_140704387956608 - INFO - Scraping profile 1/100: https://www.tiktok.com/@bossmansburgrfactory (Country: usa)
+2025-08-27 14:18:57,083 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile mrnasdog saved successfully
+2025-08-27 14:18:57,083 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 37/100: https://www.tiktok.com/@cnn (Country: usa)
+2025-08-27 14:19:02,944 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: cnn (37/100)
+2025-08-27 14:19:03,027 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile cnn to Airtable...
+2025-08-27 14:19:03,491 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile cnn saved successfully
+2025-08-27 14:19:03,491 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 38/100: https://www.tiktok.com/@ggenxrp.newss (Country: usa)
+2025-08-27 14:19:04,824 - Scraper-task_1756286263621_140704387956608 - INFO - ⏭️ Skipping bossmansburgrfactory - already in database
+2025-08-27 14:19:04,825 - Scraper-task_1756286263621_140704387956608 - INFO - Scraping profile 2/100: https://www.tiktok.com/@thatwingspot (Country: usa)
+2025-08-27 14:19:09,022 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: ggenxrp.newss (38/100)
+2025-08-27 14:19:09,558 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile ggenxrp.newss to Airtable...
+2025-08-27 14:19:10,065 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile ggenxrp.newss saved successfully
+2025-08-27 14:19:10,065 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 39/100: https://www.tiktok.com/@dandoescrypto (Country: usa)
+2025-08-27 14:19:12,919 - Scraper-task_1756286263621_140704387956608 - INFO - Processing profile: thatwingspot (1/100)
+2025-08-27 14:19:13,143 - Scraper-task_1756286263621_140704387956608 - INFO - 💾 Saving profile thatwingspot to Airtable...
+2025-08-27 14:19:13,538 - Scraper-task_1756286263621_140704387956608 - INFO - ✅ Profile thatwingspot saved successfully
+2025-08-27 14:19:13,538 - Scraper-task_1756286263621_140704387956608 - INFO - Scraping profile 3/100: https://www.tiktok.com/@elainecarolskitchen (Country: usa)
+2025-08-27 14:19:17,192 - Scraper-task_1756285999432_140704387956608 - INFO - Processing profile: dandoescrypto (39/100)
+2025-08-27 14:19:17,279 - Scraper-task_1756285999432_140704387956608 - INFO - 💾 Saving profile dandoescrypto to Airtable...
+2025-08-27 14:19:17,706 - Scraper-task_1756285999432_140704387956608 - INFO - ✅ Profile dandoescrypto saved successfully
+2025-08-27 14:19:17,707 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 40/100: https://www.tiktok.com/@missteencrypto (Country: usa)
+2025-08-27 14:19:21,196 - Scraper-task_1756286263621_140704387956608 - INFO - ⏭️ Skipping elainecarolskitchen - already in database
+2025-08-27 14:19:21,197 - Scraper-task_1756286263621_140704387956608 - INFO - Scraping profile 4/100: https://www.tiktok.com/@dlameats (Country: usa)
+2025-08-27 14:19:32,154 - Scraper-task_1756286263621_140704387956608 - ERROR - ❌ Error scraping profile https://www.tiktok.com/@dlameats: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-27 14:19:32,155 - Scraper-task_1756285999432_140704387956608 - ERROR - ❌ Error scraping profile https://www.tiktok.com/@missteencrypto: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-27 14:19:32,157 - Scraper-task_1756286263621_140704387956608 - INFO - Scraping profile 5/100: https://www.tiktok.com/@burgerquest (Country: usa)
+2025-08-27 14:19:32,157 - Scraper-task_1756285999432_140704387956608 - INFO - Scraping profile 41/100: https://www.tiktok.com/@loquenadiemepregunto0 (Country: usa)
+2025-08-27 14:19:32,304 - MainThread - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-08-27 14:19:32,305 - MainThread - INFO - Scheduler has been shut down
+2025-08-27 14:19:32,306 - MainThread - INFO - 📅 Scheduler stopped
+2025-08-27 14:19:32,307 - MainThread - INFO - ⏳ Waiting for 2 active tasks to complete...
+2025-08-27 16:08:37,013 - MainThread - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-27 16:08:37,014 - MainThread - INFO - Added job "Daily TikTok Scraping" to job store "default"
+2025-08-27 16:08:37,014 - MainThread - INFO - Scheduler started
+2025-08-27 16:08:37,014 - MainThread - INFO - 📅 Scheduler started - cron job will run every 24 hours
+2025-08-27 16:08:37,014 - MainThread - INFO - Added job "Task Cleanup" to job store "default"
+2025-08-27 16:08:37,014 - MainThread - INFO - 🧹 Cleanup job scheduled - runs every 6 hours
+2025-08-27 16:08:37,014 - MainThread - INFO - Added job "Health Monitoring" to job store "default"
+2025-08-27 16:08:37,014 - MainThread - INFO - 💓 Health monitor scheduled - runs every 30 minutes
+2025-08-27 16:08:37,034 - MainThread - INFO - 🚀 Starting TikTok Scraper Triggers System...
+2025-08-27 16:08:37,034 - MainThread - INFO - 📁 Using modular architecture:
+2025-08-27 16:08:37,034 - MainThread - INFO -    - api.py: FastAPI endpoints and LLM integration
+2025-08-27 16:08:37,034 - MainThread - INFO -    - task_manager.py: Task management and threading
+2025-08-27 16:08:37,034 - MainThread - INFO -    - triggers.py: Cron jobs and scheduling
+2025-08-27 16:09:48,958 - MainThread - INFO - 🛑 Shutdown signal received, cleaning up...
+2025-08-27 16:09:48,959 - MainThread - INFO - Scheduler has been shut down
+2025-08-27 16:09:48,959 - MainThread - INFO - 📅 Scheduler stopped
+2025-08-27 16:09:48,960 - MainThread - INFO - 👋 Shutdown complete

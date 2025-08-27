@@ -7,10 +7,13 @@ load_dotenv()
 AIRTABLE_PAT = os.getenv("AIRTABLE_PAT")
 BASE_ID = "appdKQ8h63VIsBEAj"  # Replace with your base ID
 TABLE_NAME = "tiktok"
+HASHTAGS_TABLE_NAME = "hashtags"
 
 api = Api(AIRTABLE_PAT)
 table = api.table(BASE_ID, TABLE_NAME)
+hashtags_table = api.table(BASE_ID, HASHTAGS_TABLE_NAME)
 print("Connected to Airtable Table:", table.name)
+print("Connected to Hashtags Table:", hashtags_table.name)
 
 
 def save_profile_to_airtable(profile_data: dict):
@@ -47,6 +50,36 @@ def get_existing_usernames():
         if username:  # avoid None values
             usernames.append(username)   
     return usernames
+
+def get_active_hashtags():
+    """
+    Fetch all active hashtags from the hashtags table.
+    Only returns hashtags where Active field is True/checked.
+    
+    Returns:
+        list: List of active hashtag strings
+    """
+    try:
+        # Fetch all records from hashtags table
+        records = hashtags_table.all()
+        
+        # Filter for only active hashtags
+        active_hashtags = []
+        for record in records:
+            fields = record["fields"]
+            hashtag = fields.get("Hashtag")
+            is_active = fields.get("Active", False)
+            
+            # Only include hashtags that are active (True/checked)
+            if hashtag and is_active:
+                active_hashtags.append(hashtag)
+        
+        print(f"✅ Fetched {len(active_hashtags)} active hashtags from Airtable")
+        return active_hashtags
+        
+    except Exception as e:
+        print(f"❌ Error fetching hashtags from Airtable: {e}")
+        return []
 
 if __name__ == "__main__":
     from schemas import Profile
